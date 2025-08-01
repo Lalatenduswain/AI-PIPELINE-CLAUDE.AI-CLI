@@ -1,4 +1,4 @@
-# Task Management Web App Pipeline 🚀
+# Task Management Web App Pipeline
 
 Welcome to the **Task Management Web App Pipeline** repository! This project provides a modular, beginner-friendly workflow to build, test, secure, and deploy a robust task management web application using the Claude.ai CLI. The pipeline leverages modern tools like Node.js, React, MongoDB Atlas, GitHub Actions, SonarQube, Snyk, OWASP ZAP, and Docker, deployed on AWS EC2.
 

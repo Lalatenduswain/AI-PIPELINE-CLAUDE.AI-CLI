@@ -51,8 +51,8 @@ Before running the pipeline, ensure the following tools and accounts are set up:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/Lalatenduswain/run-pipeline.git
-cd run-pipeline
+git clone https://github.com/Lalatenduswain/AI-PIPELINE-CLAUDE.AI-CLI.git
+cd AI-PIPELINE-CLAUDE.AI-CLI
 ```
 
 ### Directory Structure

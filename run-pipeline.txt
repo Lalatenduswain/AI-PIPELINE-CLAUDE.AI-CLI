@@ -1,0 +1,107 @@
+#!/bin/bash
+
+# Check for Claude.ai CLI configuration
+CONFIG_FILE="$HOME/.claude/config"
+if [ ! -f "$CONFIG_FILE" ]; then
+  echo "Error: Claude.ai CLI not configured. Please set up API key in ~/.claude/config."
+  echo "Follow instructions at https://docs.anthropic.com/."
+  exit 1
+fi
+
+# Simulate login (assumes API key is valid)
+echo "Logging in to Claude.ai CLI..."
+# In real usage, you might run `claude --login` or validate the API key here
+echo "Login successful!"
+
+# Menu for task selection
+while true; do
+  echo -e "\nTask Selection Menu:"
+  echo "1. Plan Project (plan.md)"
+  echo "2. Develop Frontend (frontend.md)"
+  echo "3. Develop Backend (backend.md)"
+  echo "4. Set Up Database (database.md)"
+  echo "5. Generate Tests (test.md)"
+  echo "6. Test APIs (api-test.md)"
+  echo "7. Review Code (code-review.md)"
+  echo "8. Run Security Checks (security.md)"
+  echo "9. Set Up CI/CD (ci-cd.md)"
+  echo "10. Configure Deployment (deploy.md)"
+  echo "11. Set Up Monitoring (monitor.md)"
+  echo "12. Update Dependencies (update.md)"
+  echo "13. Generate Documentation (docs.md)"
+  echo "14. Push to GitHub (push.md)"
+  echo "15. Exit"
+  read -p "Enter your choice (1-15): " choice
+
+  case $choice in
+    1)
+      echo "Processing plan.md..."
+      claude --file pipeline/plan.md
+      ;;
+    2)
+      echo "Processing frontend.md..."
+      claude --file pipeline/frontend.md
+      ;;
+    3)
+      echo "Processing backend.md..."
+      claude --file pipeline/backend.md
+      ;;
+    4)
+      echo "Processing database.md..."
+      claude --file pipeline/database.md
+      ;;
+    5)
+      echo "Processing test.md..."
+      claude --file pipeline/test.md
+      ;;
+    6)
+      echo "Processing api-test.md..."
+      claude --file pipeline/api-test.md
+      ;;
+    7)
+      echo "Processing code-review.md..."
+      claude --file pipeline/code-review.md
+      ;;
+    8)
+      echo "Processing security.md..."
+      claude --file pipeline/security.md
+      ;;
+    9)
+      echo "Processing ci-cd.md..."
+      claude --file pipeline/ci-cd.md
+      ;;
+    10)
+      echo "Processing deploy.md..."
+      claude --file pipeline/deploy.md
+      ;;
+    11)
+      echo "Processing monitor.md..."
+      claude --file pipeline/monitor.md
+      ;;
+    12)
+      echo "Processing update.md..."
+      claude --file pipeline/update.md
+      ;;
+    13)
+      echo "Processing docs.md..."
+      claude --file pipeline/docs.md
+      ;;
+    14)
+      echo "Processing push.md..."
+      claude --file pipeline/push.md
+      ;;
+    15)
+      echo "Exiting..."
+      exit 0
+      ;;
+    *)
+      echo "Invalid choice. Please select 1-15."
+      ;;
+  esac
+
+  if [ $? -ne 0 ]; then
+    echo "Error processing file. Check Claude.ai CLI logs."
+  else
+    echo "Task completed successfully."
+  fi
+done

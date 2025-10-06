@@ -231,19 +231,6 @@ The `run-pipeline.sh` script provides an interactive menu to process pipeline ta
 3. **Documentation**:
    - Read `docs/user-guide.md` and `docs/developer-guide.md` (option `13`).
 
----
-
-## 💖 Support & Donations
-
-Encountering issues? Submit a bug report or feature request on our [GitHub Issues page](https://github.com/Lalatenduswain/run-pipeline/issues).
-
-If you find this project helpful, consider showing your appreciation:
-
-- ⭐ Star the repository on [GitHub](https://github.com/Lalatenduswain/run-pipeline).
-- ☕ Buy me a coffee at [Buy Me a Coffee](https://www.buymeacoffee.com/lalatendu.swain).
-- 📧 Contact me via [blog.lalatendu.info](https://blog.lalatendu.info/).
-
----
 
 ## Disclaimer | Running the Script
 
@@ -1301,3 +1288,17 @@ Unique needs:
 **END OF UNIVERSAL PROJECT ARCHITECT PROMPT v3.0**
 
 Last updated By Lalatendu: October 6th 2025
+
+---
+
+## 💖 Support & Donations
+
+Encountering issues? Submit a bug report or feature request on our [GitHub Issues page](https://github.com/Lalatenduswain/run-pipeline/issues).
+
+If you find this project helpful, consider showing your appreciation:
+
+- ⭐ Star the repository on [GitHub](https://github.com/Lalatenduswain/run-pipeline).
+- ☕ Buy me a coffee at [Buy Me a Coffee](https://www.buymeacoffee.com/lalatendu.swain).
+- 📧 Contact me via [blog.lalatendu.info](https://blog.lalatendu.info/).
+
+---
